@@ -1,0 +1,6 @@
+config {
+    type: "declaration",
+    database: "bigquery-test-march",
+    schema: "raw",
+    name: "meals"
+}
