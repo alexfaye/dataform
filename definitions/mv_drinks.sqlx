@@ -1,5 +1,6 @@
 config {
     type: "view",
-    schema: "staging"
+    schema: "staging",
+    materialized: true
 }
 select * from ${ref("v_drinks")}

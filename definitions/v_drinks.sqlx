@@ -1,4 +1,6 @@
 config {
     type: "view"
 }
-select distinct drink_id, drink_name, drink_type from ${ref("drinks")}
+select distinct drink_id, drink_name, drink_type,
+'${dataform.projectConfig.vars.execution_date}' as execution_date
+from ${ref("drinks")}

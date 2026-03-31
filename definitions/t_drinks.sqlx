@@ -1,0 +1,5 @@
+config {
+    type: "table"
+}
+select *, '${dataform.projectConfig.vars.country}' as country from ${ref("drinks")}
+where Date>='${dataform.projectConfig.vars.execution_date}'

@@ -1,4 +1,8 @@
 defaultProject: bigquery-test-march
 defaultDataset: staging
+defaultLocation: australia-southeast1
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.42
+vars:
+  execution_date: "2024-05-02"
+  country: 'China'
