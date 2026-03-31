@@ -1,8 +1,0 @@
-config {
-    type: "view",
-    schema: "sampledata"
-}
-
-SELECT
-  'Test1' as name1, 
-  'Test2' as name2

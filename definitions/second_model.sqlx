@@ -1,9 +1,0 @@
-config {
-    type: "view",
-    schema: "sampledata"
-}
-
-SELECT
-  *
-FROM
-  ${ref("first_model")}
