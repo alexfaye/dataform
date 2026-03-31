@@ -1,0 +1,5 @@
+config {
+    type: "view",
+    schema: "staging"
+}
+select * from ${ref("v_drinks")}
