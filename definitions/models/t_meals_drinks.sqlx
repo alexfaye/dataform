@@ -1,0 +1,10 @@
+config {
+    type: "incremental",
+    uniqueKey: ["drink_id", "meal_id"]
+}
+select distinct drink_id, meal_id, drink_name, meal_name
+from ${ref("drinks")} drinks
+join ${ref("meals")} meals
+using (drink_id)
+where meals.date='${dataform.projectConfig.vars.execution_date}'
+group by all

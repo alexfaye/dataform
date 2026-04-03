@@ -1,0 +1,11 @@
+config {
+    type: "table",
+    assertions: {
+        nonNull: ["drink_id", "drink_name"],
+        rowConditions: [
+            'date > "2024-01-01"'
+        ]
+    }
+}
+select *, '${dataform.projectConfig.vars.country}' as country from ${ref("drinks")}
+where Date>='${dataform.projectConfig.vars.execution_date}'
